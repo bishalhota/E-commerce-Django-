@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.py[cod]
+*.log
+media/*
+!media/products/
+!media/products/Bulb.avif
+.git/
