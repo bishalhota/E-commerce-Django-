@@ -25,6 +25,7 @@ services:
       DB_HOST: db
       DB_PORT: 5432
       DJANGO_SECRET_KEY: ${DJANGO_SECRET_KEY:-dev-only-change-this-secret-key}
+      
 
     ports:
       - "8001:8000"

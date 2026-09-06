@@ -92,7 +92,7 @@ def remove_from_cart(request):
 def create_order(request):
     try:
         data = request.data
-
+        
         name = data.get('name')
         address = data.get('address')
         email = data.get('email')
@@ -107,7 +107,6 @@ def create_order(request):
         total = sum(float(item.product.price) * item.quantity for item in cart.item.all())
 
         #Create Order
-
         order = Order.objects.create(
             user = None,
             total_amount = total,
